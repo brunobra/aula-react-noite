@@ -1,8 +1,15 @@
 import React from 'react';
 
-const Product = () => (
-	<div>
-		<p>Produto</p>
+import './Product.css';
+import './ProductName.css';
+import './ProductPrice.css';
+import './ProductDelete.css';
+
+const Product = ({name, price}) => (
+	<div className="Product">
+		<span className="ProductName">{name}</span>
+		<span className="ProductPrice">{price}</span>
+		<button className="ProductDelete">X</button>
 	</div>
 )
 
